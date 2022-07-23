@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>World of Edge Extension</title>
+    <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wordle-head"></div>
+    <div class="wordle-body">
+      <div class="guess-container">
+        <div class="guess-row">
+          <div class="guess-tile" id="g00"></div>
+          <div class="guess-tile" id="g01"></div>
+          <div class="guess-tile" id="g02"></div>
+          <div class="guess-tile" id="g03"></div>
+          <div class="guess-tile" id="g04"></div>
+        </div>
+        <div class="guess-row">
+          <div class="guess-tile" id="g10"></div>
+          <div class="guess-tile" id="g11"></div>
+          <div class="guess-tile" id="g12"></div>
+          <div class="guess-tile" id="g13"></div>
+          <div class="guess-tile" id="g14"></div>
+        </div>
+        <div class="guess-row">
+          <div class="guess-tile" id="g20"></div>
+          <div class="guess-tile" id="g21"></div>
+          <div class="guess-tile" id="g22"></div>
+          <div class="guess-tile" id="g23"></div>
+          <div class="guess-tile" id="g24"></div>
+        </div>
+        <div class="guess-row">
+          <div class="guess-tile" id="g30"></div>
+          <div class="guess-tile" id="g31"></div>
+          <div class="guess-tile" id="g32"></div>
+          <div class="guess-tile" id="g33"></div>
+          <div class="guess-tile" id="g34"></div>
+        </div>
+        <div class="guess-row">
+          <div class="guess-tile" id="g40"></div>
+          <div class="guess-tile" id="g41"></div>
+          <div class="guess-tile" id="g42"></div>
+          <div class="guess-tile" id="g43"></div>
+          <div class="guess-tile" id="g44"></div>
+        </div>
+        <div class="guess-row">
+          <div class="guess-tile" id="g50"></div>
+          <div class="guess-tile" id="g51"></div>
+          <div class="guess-tile" id="g52"></div>
+          <div class="guess-tile" id="g53"></div>
+          <div class="guess-tile" id="g54"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wordle-foot">
+      <div class="keyboard-row">
+        <button type="button" class="btn btn-light" id="Q">Q</button>
+        <button type="button" class="btn btn-light" id="W">W</button>
+        <button type="button" class="btn btn-light" id="E">E</button>
+        <button type="button" class="btn btn-light" id="R">R</button>
+        <button type="button" class="btn btn-light" id="T">T</button>
+        <button type="button" class="btn btn-light" id="Y">Y</button>
+        <button type="button" class="btn btn-light" id="U">U</button>
+        <button type="button" class="btn btn-light" id="I">I</button>
+        <button type="button" class="btn btn-light" id="O">O</button>
+        <button type="button" class="btn btn-light" id="P">P</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" class="btn btn-light" id="A">A</button>
+        <button type="button" class="btn btn-light" id="S">S</button>
+        <button type="button" class="btn btn-light" id="D">D</button>
+        <button type="button" class="btn btn-light" id="F">F</button>
+        <button type="button" class="btn btn-light" id="G">G</button>
+        <button type="button" class="btn btn-light" id="H">H</button>
+        <button type="button" class="btn btn-light" id="J">J</button>
+        <button type="button" class="btn btn-light" id="K">K</button>
+        <button type="button" class="btn btn-light" id="L">L</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" class="btn btn-primary" id="ENTER">Enter</button>
+        <button type="button" class="btn btn-light" id="Z">Z</button>
+        <button type="button" class="btn btn-light" id="X">X</button>
+        <button type="button" class="btn btn-light" id="C">C</button>
+        <button type="button" class="btn btn-light" id="V">V</button>
+        <button type="button" class="btn btn-light" id="B">B</button>
+        <button type="button" class="btn btn-light" id="N">N</button>
+        <button type="button" class="btn btn-light" id="M">M</button>
+        <button type="button" class="btn btn-primary" id="DELETE">
+          Delete
+        </button>
+      </div>
+    </div>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./words.js"></script>
+    <script src="./popup.js"></script>
+  </body>
+</html>
