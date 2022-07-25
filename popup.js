@@ -9,8 +9,8 @@ let g = [];
 let success = false;
 
 handleLetterClick = (letter) => {
+  if (index === colomn || success || times == row) return;
   console.log(letter);
-  if (index === colomn || success) return;
   g[times] = g[times] || [];
   g[times][index] = letter;
   document.getElementById("g" + times.toString() + index.toString()).innerText =
@@ -19,14 +19,14 @@ handleLetterClick = (letter) => {
 };
 
 handleDeleteClick = () => {
-  if (index === 0 || success) return;
+  if (index === 0 || success || times == row) return;
   index--;
   document.getElementById("g" + times.toString() + index.toString()).innerText =
     "";
 };
 
 handleEnterClick = () => {
-  if (index !== colomn || success) return;
+  if (index !== colomn || success || times == row) return;
   const player_answer = g[times];
   console.log(
     player_answer.join("") + " " + words.indexOf(player_answer.join(""))
@@ -103,7 +103,7 @@ handleEnterClick = () => {
   }
 
   if (++times === row) {
-    alert("Answer is " + answer + " !!!");
+    alert("Answer is " + answer.join("").toUpperCase() + " !!!");
     return;
   }
   index = 0;
