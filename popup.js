@@ -14,7 +14,7 @@ handleLetterClick = (letter) => {
   g[times] = g[times] || [];
   g[times][index] = letter;
   document.getElementById("g" + times.toString() + index.toString()).innerText =
-    letter;
+    letter.toUpperCase();
   index++;
 };
 
@@ -28,7 +28,9 @@ handleDeleteClick = () => {
 handleEnterClick = () => {
   if (index !== colomn || success) return;
   const player_answer = g[times];
-  console.log(player_answer);
+  console.log(
+    player_answer.join("") + " " + words.indexOf(player_answer.join(""))
+  );
   if (words.indexOf(player_answer.join("")) === -1) {
     alert("Not a word !!!");
     for (let i = 0; i < colomn; i++) {
