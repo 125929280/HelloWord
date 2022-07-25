@@ -28,9 +28,6 @@ handleDeleteClick = () => {
 handleEnterClick = () => {
   if (index !== colomn || success || times == row) return;
   const player_answer = g[times];
-  console.log(
-    player_answer.join("") + " " + words.indexOf(player_answer.join(""))
-  );
   if (words.indexOf(player_answer.join("")) === -1) {
     alert("Not a word !!!");
     for (let i = 0; i < colomn; i++) {
@@ -44,8 +41,7 @@ handleEnterClick = () => {
   const answer_vis = [],
     player_answer_vis = [];
   for (let i = 0; i < answer.length; i++) {
-    answer_vis[i] = false;
-    player_answer_vis[i] = false;
+    answer_vis[i] = player_answer_vis[i] = false;
   }
   // fully correct
   let correct_cnt = 0;
@@ -93,7 +89,6 @@ handleEnterClick = () => {
   //fully incorrect
   for (let i = 0; i < colomn; i++) {
     if (answer_vis[i]) continue;
-    answer_vis[i] = true;
     document.getElementById(
       "g" + times.toString() + i.toString()
     ).style.backgroundColor = "#787c7e";
@@ -103,7 +98,7 @@ handleEnterClick = () => {
   }
 
   if (++times === row) {
-    alert("Answer is " + answer.join("").toUpperCase() + " !!!");
+    alert("Answer is " + answer.join("") + " !!!");
     return;
   }
   index = 0;
