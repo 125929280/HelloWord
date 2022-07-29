@@ -38,11 +38,13 @@ handleEnterClick = () => {
     g[times].length = 0;
     return;
   }
+
   const answer_vis = [],
     player_answer_vis = [];
   for (let i = 0; i < answer.length; i++) {
     answer_vis[i] = player_answer_vis[i] = false;
   }
+
   // fully correct
   let correct_cnt = 0;
   for (let i = 0; i < colomn; i++) {
@@ -86,6 +88,7 @@ handleEnterClick = () => {
       }
     }
   }
+
   //fully incorrect
   for (let i = 0; i < colomn; i++) {
     if (answer_vis[i]) continue;
