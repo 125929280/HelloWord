@@ -1,2 +1,3 @@
-# WordleOfEdge
-基于Edge拓展的Wordle游戏
+# HelloWord
+
+基于 Edge 拓展的 Wordle 游戏
