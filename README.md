@@ -10,12 +10,12 @@
 
 #### 游戏界面
 
-![image](images/preview1.png)
+![image](images/playground.png)
 
 #### 成功样例
 
-![image](images/preview2.png)
+![image](images/success.png)
 
 #### 失败样例
 
-![image](images/preview3.png)
+![image](images/fail.png)
